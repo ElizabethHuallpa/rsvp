@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Boda Elizabeth y Gustavo</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="lock">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<filter id="rough" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency=".018" numOctaves="2" seed="4" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="34"/></filter>
+</defs></svg>
+
+<div id="env">
+  <div class="ev-scene">
+    <div class="ev-table"></div>
+    <div class="ev-body">
+      <div class="ev-inner"></div>
+      <div class="ev-piece ev-l"></div><div class="ev-piece ev-r"></div><div class="ev-piece ev-b"></div>
+      <svg class="ev-seams" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+        <g fill="none" stroke-linecap="round" vector-effect="non-scaling-stroke">
+          <path d="M0 0L50 44M100 0L50 44M0 100L50 44M100 100L50 44" stroke="#1d2512" stroke-opacity=".55" stroke-width="1.6" vector-effect="non-scaling-stroke"/>
+          <path d="M0 0.4L50 44.4M100 0.4L50 44.4M0 99.6L50 43.6M100 99.6L50 43.6" stroke="#d9e3b8" stroke-opacity=".28" stroke-width="1" vector-effect="non-scaling-stroke"/>
+        </g>
+      </svg>
+    </div>
+    <div class="ev-cast"></div>
+    <div class="ev-flap">
+      <div class="ev-face ev-front"><div class="ev-tri"></div>
+        <div class="ev-seal" role="button" tabindex="0" aria-label="Abrir invitación" onclick="openInv()" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openInv()}">
+          <svg viewBox="0 0 120 120" aria-hidden="true">
+        <defs>
+          <radialGradient id="waxG" cx="36%" cy="30%" r="80%"><stop offset="0" stop-color="#e3c987"/><stop offset=".5" stop-color="#bb9440"/><stop offset="1" stop-color="#876722"/></radialGradient>
+          <filter id="waxE" x="-12%" y="-12%" width="124%" height="124%"><feTurbulence type="fractalNoise" baseFrequency=".055" numOctaves="2" seed="8" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="8"/></filter>
+        </defs>
+        <g filter="url(#waxE)" fill="url(#waxG)"><circle cx="60" cy="60" r="49"/><circle cx="16" cy="76" r="8"/><circle cx="102" cy="40" r="7"/><circle cx="66" cy="110" r="6"/></g>
+        <circle cx="60" cy="60" r="38" fill="none" stroke="#6f531c" stroke-opacity=".5" stroke-width="2.2"/>
+        <circle cx="60" cy="60" r="35.2" fill="none" stroke="#f0dba8" stroke-opacity=".55" stroke-width="1"/>
+        <g font-family="'Pinyon Script',cursive" font-size="37" text-anchor="middle">
+          <text x="61.2" y="72.4" fill="#5e4516" fill-opacity=".6">E&amp;G</text>
+          <text x="58.8" y="69.8" fill="#f3e2b5" fill-opacity=".75">E&amp;G</text>
+          <text x="60" y="71" fill="#a98332">E&amp;G</text>
+        </g></svg>
+        </div>
+      </div>
+      <div class="ev-face ev-backf"><div class="ev-tri"></div><div class="ev-liner"></div></div>
+    </div>
+    <div class="ev-light"></div>
+    <p class="ev-hint">Toca el sello para abrir</p>
+  </div>
+</div>
+<div id="mc" onclick="toggleMusic()" title="Música">🔊</div>
+<audio id="bg" loop preload="auto" src="assets/audio/cancion.mp3"></audio>
+
+<main id="main">
+  <section class="hero wc b">
+    <div class="bou l"></div><div class="bou r"></div>   
+    <div class="cita">"Así que ya no son dos, sino una sola carne"<br>(Mateo 19:6)</div>       
+      <div class="ht">
+      <small>¡Nos casamos!</small>
+      <h1 class="names">Elizabeth<span class="amp">&</span>Gustavo</h1></div>
+    <img class="hch" src="assets/img/iglesia-acuarela.png" alt="Parroquia San Pedro de Carabayllo">
+    <div class="down">Desliza<b>⌄</b></div>
+  </section>
+
+  <section class="rv wc b"><div class="in-w">
+    <div class="flor ftr"></div><h2>Tenemos el agrado de invitarlos a nuestra boda</h2>
+    <p class="sub"></p>
+    <div class="fecha-boda">
+      <div class="mes">Diciembre</div>
+      <div class="fecha-detalle">
+        <div class="fecha-lateral">
+          <span>Sábado</span>
+        </div>
+        <div class="dia">05</div>
+        <div class="fecha-lateral">
+          <span>2026</span>
+        </div>
+      </div>
+      <!-- Nueva hora debajo de la fecha -->
+      <div class="hora">10:30 a. m.</div>
+    </div>
+    
+    <a
+      class="btn alt"
+      style="margin-top:24px"
+      target="_blank"
+      rel="noopener"
+      href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Boda+Elizabeth+y+Gustavo&dates=20261205T153000Z/20261206T040000Z&location=Finca+Clementina,+Loma+Alta,+Carabayllo"
+    >
+      📅 Añadir al calendario
+    </a>
+  </div>
+</section>
+  
+ <section class="wc p">
+    <div class="flor fbl"></div>
+    <h2>Faltan</h2>
+    <div class="countdown">
+      <div class="cb"><div class="cv" id="d">00</div><div class="cl">Días</div></div>
+      <div class="cb"><div class="cv" id="h">00</div><div class="cl">Horas</div></div>
+      <div class="cb"><div class="cv" id="m">00</div><div class="cl">Min</div></div>
+      <div class="cb"><div class="cv" id="s">00</div><div class="cl">Seg</div></div>
+    </div>
+    <p class="local" id="local"></p>
+  </section>
+
+ <section class="rv wc b"><div class="in-w">
+    <div class="flor ftr"></div><h2>Junto con nuestras familias</h2>
+    <div class="cards two">
+      <div class="card"><h3>Padres de la Novia</h3><p class="sub">Nolberta Chayña Percca<br>Celso Huallpa Mamani</p></div>
+      <div class="card"><h3>Padres del Novio</h3><p class="sub">Orfelinda Avalo Cortez<br>Gustavo Arellano Anticona</p></div>
+    </div>
+  </div></section>
+
+  <section class="rv wc g"><div class="in-w">
+    <div class="flor fbl"></div><h2>¿Dónde?</h2> 
+    <p class="sub">Al término de la ceremonia, te invitamos a acompañarnos en nuestra recepción de boda.</p>
+    <div class="cards two">
+      <div class="card"><div class="paint"><div class="ph" style="background-image:url(assets/img/foto-parroquia.jpg)"></div></div><h3>Ceremonia</h3><p class="t2">10:30 hrs</p><p class="sub">Parroquia San Pedro de Carabayllo</p>
+        <a class="btn" target="_blank" rel="noopener" href="https://maps.app.goo.gl/Hzco4SC6pKMiCvkA8">📍 Ver mapa</a></div>
+      <div class="card"><div class="paint"><div class="ph" style="background-image:url(assets/img/foto-finca.jpg)"></div></div><h3>Recepción</h3><p class="t2">12:30 hrs</p><p class="sub">Finca Clementina, Carabayllo</p>
+        <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=-11.857462,-77.033531&query_place_id=ChIJpynwBgDXBZER2iD01ef62YA">📍 Ver mapa</a></div>
+    </div>
+  </div></section>
+
+    <section class="rv wc g"><div class="in-w">
+    <div class="flor fbl"></div><h2>Código de vestimenta</h2>
+    <p style="font-weight:600;letter-spacing:5px;text-transform:uppercase;margin:6px 0 0">Formal</p>
+    <div class="cards two">
+      <div class="card"><h3>Hombres</h3><p class="sub">Terno y camisa.<br>Evitar color azul.</p></div>
+      <div class="card"><h3>Mujeres</h3><p class="sub">Vestido largo.<br>Evitar blanco, beige y sus derivados.</p></div>
+    </div>
+    <div class="pal"><i style="background:#fff" title="Blanco"></i><i style="background:#E6DCD2" title="Beige"></i><i style="background:#2b4a8a" title="Azul (hombres)"></i></div>
+    <p class="sub">Colores a evitar</p>
+  </div></section>
+  
+  <section class="rv wc b"><div class="in-w">
+    <div class="flor ftr"></div><h2>Itinerario</h2>
+    <div class="tl">
+      <div class="it"><img class="ico" src="assets/img/icono-ceremonia.png" alt=""><div><span class="t">10:30 AM</span><h4>Ceremonia</h4></div></div>
+      <div class="it"><img class="ico" src="assets/img/icono-recepcion.png" alt=""><div><span class="t">12:30 AM</span><h4>Recepción</h4></div></div>
+      <div class="it"><img class="ico" src="assets/img/icono-almuerzo.png" alt=""><div><span class="t">14:30 PM</span><h4>Almuerzo</h4></div></div>
+      <div class="it"><img class="ico" src="assets/img/icono-fiesta.png" alt=""><div><span class="t">15:30 PM</span><h4>Fiesta</h4></div></div>
+    </div>
+  </div></section>
+
+  <section class="rv wc b">
+  <div class="in-w">
+    <h2>Regalos</h2>
+    <p class="sub">Su presencia es el mejor regalo. Gracias por acompañarnos y ser parte de este día tan especial. Si desean hacernos un obsequio, lo recibiremos con mucho cariño y gratitud.</p>
+    <div class="gift"><b>BBVA</b><br>Cuenta en soles: 0011-0118-0200563710<br>CCI: 011-118-000200563710-79<br>Plin: 942758890<br><i>Titulares:<br><i>Gustavo Victor Arellano Avalo<br><i>Elizabeth Natali Huallpa Chayña</i></div>
+  </div></section>
+      
+  <section class="rv wc p"><div class="in-w">
+    <div class="flor ftl"></div><h2>Confirmar asistencia</h2>
+    <p class="sub">Estamos deseando verte. Por favor, confirma tu asistencia antes del 20 de noviembre de 2026.</p>
+    <form id="rsvpForm" class="card rsvp" novalidate>
+      <div class="fg">
+        <label for="rsvpName">Nombre completo <span class="req" aria-hidden="true">*</span></label>
+        <input id="rsvpName" name="nombre" type="text" autocomplete="off" required maxlength="120" placeholder="Nombre y apellidos" aria-describedby="hint-name err-name" aria-autocomplete="list" aria-controls="rsvpSuggest">
+        <ul id="rsvpSuggest" class="res" role="listbox" hidden></ul>
+        <p class="hint" id="hint-name"></p>
+        <p class="auth" id="authInfo" hidden>Asistentes autorizados: <b id="authN">1</b> <span id="authNote"></span></p>
+        <p class="err" id="err-name" role="alert"></p>
+      </div>
+      <fieldset class="fg">
+        <legend>¿Podrás acompañarnos? <span class="req" aria-hidden="true">*</span></legend>
+        <label class="opt"><input type="radio" name="asistencia" value="asistire"> <span>Asistiré</span></label>
+        <label class="opt"><input type="radio" name="asistencia" value="no_asistire"> <span>No podré asistir</span></label>
+        <p class="err" id="err-att" role="alert"></p>
+      </fieldset>
+
+      <!-- Contador de asistentes RSVP -->
+      <div class="fg" id="seatsBox" hidden>
+        <label for="rsvpSeats">¿Cuántas personas asistirán, contándote a ti? <span class="req" aria-hidden="true">*</span></label>
+        <div class="step">
+          <button type="button" id="seatsMinus" aria-label="Restar una persona">−</button>
+          <input id="rsvpSeats" name="asistentes" type="number" value="1" min="1" max="10" readonly aria-describedby="err-seats">
+          <button type="button" id="seatsPlus" aria-label="Añadir una persona">+</button>
+        </div>
+        <p class="err" id="err-seats" role="alert"></p>
+        <div id="companions" hidden></div>
+        <p class="err" id="err-comp" role="alert"></p>
+      </div>
+      <!-- Fin -->
+    
+      <div class="fg">
+        <label for="rsvpMsg">Mensaje para los novios <small>(opcional)</small></label>
+        <textarea id="rsvpMsg" name="mensaje" rows="3" maxlength="500" placeholder="Escríbenos unas palabras"></textarea>
+      </div>
+      <div class="hp" aria-hidden="true"><label>No llenar este campo<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+      <button class="btn" id="rsvpSubmit" type="submit">Enviar respuesta</button>
+      <div id="rsvpStatus" class="status" role="status" aria-live="polite" hidden></div>
+    </form>
+  </div></section>
+
+    <section class="rv wc b">
+  <div class="in-w">
+    <img class="mono" src="assets/img/monograma.png" alt="EG">
+    <h2>¡Te esperamos!</h2>
+  </div>
+
+<!-- Perrito -->
+<div class="field">
+    <!-- tu <svg class="grass"> igual -->
+    <!-- tu <div class="runner"> igual -->
+    <svg class="grass" viewBox="0 0 1080 46" preserveAspectRatio="none" aria-hidden="true"><path d="M0 46V20Q30 8 60 18T120 14T180 20T240 12T300 19T360 12T400 18V46Z" fill="
+    #8aa87a" fill-opacity=".75"/><path d="M0 46V30Q50 22 100 30T200 28T300 31T400 27V46Z" fill="
+    #6b8e5f" fill-opacity=".8"/><g fill="
+    #f0a9c0"><circle cx="40" cy="22" r="3"/><circle cx="150" cy="19" r="3"/><circle cx="260" cy="17" r="3"/><circle cx="350" cy="16" r="3"/></g><g fill="
+    #f4de96"><circle cx="90" cy="20" r="2.6"/><circle cx="210" cy="19" r="2.6"/><circle cx="310" cy="21" r="2.6"/></g></svg>
+    <svg class="grass" viewBox="0 0 400 46" preserveAspectRatio="none" aria-hidden="true"><path d="M0 46V20Q30 8 60 18T120 14T180 20T240 12T300 19T360 12T400 18V46Z" fill="#8aa87a" fill-opacity=".75"/><path d="M0 46V30Q50 22 100 30T200 28T300 31T400 27V46Z" fill="#6b8e5f" fill-opacity=".8"/><g fill="#f0a9c0"><circle cx="40" cy="22" r="3"/><circle cx="150" cy="19" r="3"/><circle cx="260" cy="17" r="3"/><circle cx="350" cy="16" r="3"/></g><g fill="#f4de96"><circle cx="90" cy="20" r="2.6"/><circle cx="210" cy="19" r="2.6"/><circle cx="310" cy="21" r="2.6"/></g></svg>
+    <div class="runner"><div class="flip"><div class="hop"><img src="assets/img/tira.png" alt="Tira, nuestro perrito"></div></div><div class="shadow"></div></div>  
+
+  </div>
+  </section>
+</main>
+      
+<script src="js/main.js"></script>
+ 
+<script src="js/rsvp-config.js"></script>
+ 
+<script src="js/rsvp-storage.js"></script>
+ 
+<script src="js/rsvp-ui.js"></script>
+</body>
+</html>
